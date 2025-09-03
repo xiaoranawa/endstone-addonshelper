@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "endstone-addons-helper"
+version = "1.0.3"
+description = "自动管理mcaddon和mcpack文件的endstone插件"
+dependencies = [
+    "endstone>=0.5.0",
+]
+
+[project.entry-points."endstone"]
+addons_helper = "endstone_addons_helper:AddonsHelperPlugin"
